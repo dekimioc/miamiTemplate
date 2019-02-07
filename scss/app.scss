@@ -1,0 +1,24 @@
+@import 'base/font-family';
+@import 'base/color';
+@import 'base/mixin';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/about';
+@import 'layout/article';
+@import 'layout/gallery';
+@import 'layout/consultation';
+@import 'layout/testimonials';
+@import 'layout/contact';
+@import 'layout/responsive';
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+

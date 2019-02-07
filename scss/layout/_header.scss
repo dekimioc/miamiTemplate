@@ -1,0 +1,85 @@
+.header {
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    font: {
+        family: "Ubuntu-Medium";
+        size: 28px;
+    }
+    background: {
+        image: url(/i/images/header_background_without_logo.jpg);
+        size: cover;
+        repeat: no-repeat;
+    }
+    .header-content {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-areas: 
+        "header-top"
+        "nav-header";
+
+        .header-top {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            color: $color-header-top;
+            grid-area: header-top;
+
+            @include breakpoint(delta) {
+                grid-template-columns: 1fr;
+                
+                .right-paragraph {
+                    text-align: left;
+                }
+            }
+
+            .left-paragraph {
+                margin-top: 90px;
+            }
+
+            .center {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 50px;
+                }
+            }
+
+            .right-paragraph {
+                text-align: right;
+                margin-top: 90px;
+                
+                a {
+                    border-bottom: 2px dashed $color-header-top;
+                    text-decoration: none;
+                    color: $color-header-top;
+                }
+            }
+
+            .nav-header {
+                    grid-area: nav-header;
+                    margin-top: 600px;
+                    ul {
+
+                        li {
+                        list-style: none;
+                        display: inline-block;
+                        margin: 0 40px 50px 0;
+
+                        @include breakpoint(gamma) {
+                            display: block;
+                            margin: 0 60px 0 0;
+                        }
+                        
+                        a {
+                            text-decoration: none;
+                            color: $color-white;
+                            font-weight: bold;
+                            
+                        }
+                    }
+                }
+
+            }
+        
+        }
+    }

@@ -1,0 +1,148 @@
+#gallery {
+    background-color: $color-gallery-background;
+   
+    .gallery-content {
+        padding-bottom: 130px;
+        button {
+            text-transform: uppercase;
+            padding: 15px 55px;
+            background-color: $color-button;
+            display: block;
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+            
+
+            &:hover {
+                background-color: $color-button-hover;
+                a {
+                    color: $color-header-top;
+                }
+  
+            }
+            a {
+                text-decoration: none;
+                color: $color-white;
+            }
+        }
+        
+
+        h1 {
+            text-transform: uppercase;
+            font: {
+                family: "Ubuntu-Light";
+                size: 48px;
+            }
+        }
+
+        #gallery-heading {
+            position: relative;
+            top: -30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            text-align: center;
+        }
+
+        max-width: 1200px;
+        margin: auto;
+        .image-gallery {
+
+        img {
+            padding: 15px;
+        }
+
+        .first-image {
+            @include breakpoint(gamma) {
+                width: 450px;
+                height: 200px;
+            }
+
+            @include breakpoint(delta) {
+
+                width: 350px;
+                height: 200px;
+                }
+
+            }
+
+           
+
+        .two-image {
+            @include breakpoint(gamma) {
+                width: 450px;
+                height: 200px;
+            }
+
+            @include breakpoint(delta) {
+
+                width: 350px;
+                height: 200px;
+                }
+        }
+
+        .three-image { 
+            @include breakpoint(gamma) {
+                width: 450px;
+                height: 200px;
+            }
+
+            @include breakpoint(delta) {
+
+                width: 350px;
+                height: 200px;
+                }
+
+        }
+
+        .four-image {
+            @include breakpoint(gamma) {
+                width: 450px;
+                height: 200px;
+            }
+
+            @include breakpoint(delta) {
+
+                width: 350px;
+                height: 200px;
+                }
+        }
+
+        .five-image {
+            @include breakpoint(gamma) {
+                width: 450px;
+                height: 200px;
+            }
+
+            @include breakpoint(delta) {
+
+                width: 350px;
+                height: 200px;
+                }
+        }
+
+        .six-image {
+            @include breakpoint(gamma) {
+                width: 450px;
+                height: 200px;
+            }
+
+            @include breakpoint(delta) {
+
+                width: 350px;
+                height: 200px;
+                }
+        }
+
+        p {
+            padding: 0 15px;
+            font-family: "Ubuntu-Bold";
+            span {
+                color: $color-button;
+            }
+        }
+    }
+    }
+}

@@ -1,0 +1,24 @@
+.footer {
+    background: {
+    image: url(/i/images/footer_background.jpg);
+    size: cover;
+    repeat: no-repeat;
+    }
+    height: 560px;
+
+    .footer-content {
+        img {
+        margin-top: 250px;
+        margin-bottom: 170px;
+        }
+        text-align: center;
+
+        h3 {
+            font: {
+                style: "Ubuntu-Medium";
+                size: 24px;
+            }
+            color: $color-white;
+        }
+    }
+}

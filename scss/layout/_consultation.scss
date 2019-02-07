@@ -1,0 +1,89 @@
+.consultation {
+    margin-bottom: 150px;
+    #consultation-heading {
+        position: relative;
+        top: -35px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-transform: uppercase;
+        font: {
+            family: "Ubuntu-Light";
+            size: 32px;
+        }
+    }
+
+    .consultation-content {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @include breakpoint(gamma) {
+            grid-template-columns: 1fr;
+        }
+
+        .content-left {
+            font-family: "Ubuntu";
+            line-height: 1.5;
+
+            h1 {
+                font-size: 32px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+
+        .content-right {
+           
+            input {
+
+                @include breakpoint(beta) {
+                    width: 400px;
+                    padding: 25px 60px;
+                }
+
+                @include breakpoint(gamma) {
+                    width: 150px;
+                    padding: 25px 40px;
+                }
+                font: {
+                    family: "Ubuntu-Medium";
+                    size: 20px;
+                    weight: bold;
+                }
+                text-transform: uppercase;
+                text-align: center;
+                display: block;
+                width: 500px;
+                padding: 25px 80px;
+                border: none;
+                margin: 10px 5px;
+                margin-left: 100px;
+                background: $color-gallery-background;
+                color: $color-input-letter;
+                
+            }
+
+            .submit {
+
+                @include breakpoint(beta) {
+                    width: 500px;
+                    padding: 25px 60px;
+                }
+
+                @include breakpoint(gamma) {
+                    width: 230px;
+                    padding: 25px 40px;
+                }
+                width: 660px;
+                background-color: $color-button;
+                color: $color-white;
+            }
+        }
+    }
+}
